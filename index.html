@@ -1,0 +1,503 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues. More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>FileJolt - We Are Gaming Files</title>
+  <meta name="description" content="FileJolt is a video game download service that provides free lighting speed game patches, demos, mod files, and media downloads right to its users. 
+  Whether your looking for news, reviews, walkthroughs, discussions, or a place to upload your PC gaming files, FileJolt has you covered.">
+  <meta name="author" content="PixelBlast Media">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/helper.css"> 
+  <link rel="stylesheet" href="css/primary.css">   
+  <!-- end CSS-->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+    <div class="headerContainer">
+        <div class="header"> 
+          <h1><a href="#" alt="Return To FileJolt">FileJolt</a></h1>
+          
+          <div class="search">
+              <form method="post" action="#"> 
+                  <input type="text" onClick="this.value=''" name="joltSearch" value="maybe we can find it" />
+                  <input class="searchNormal" type="image" src="img/pixel.gif" onMouseOver="this.className='searchHover'" onMouseOut="this.className='searchNormal'" value="" />
+                  <!-- pixel.gif is used to make IE happy and not disply a large x over the search button, we hate IE! -->
+              </form>
+          </div>
+
+          <ul class="dropdown header-linear menu">
+              <li><a href="#">Main</a></li>
+               <li class="dir"><a href="#">Genres</a>
+                  <ul class="sub">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Adventure</a></li>
+                      <li><a href="#">Arcade</a></li>
+                      <li><a href="#">MMORPG</a></li>
+                      <li><a href="#">Role Playing</a></li>
+                      <li><a href="#">Simulation</a></li>
+                      <li><a href="#">Sports</a></li>
+                      <li><a href="#">Strategy</a></li>
+                  </ul>
+              </li>    
+              <li><a href="#">Demos</a></li>
+              <li><a href="#">Patches</a></li>
+              <li><a href="#">Tools</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Reviews</a></li>
+
+              <li><a href="#">Previews</a></li>
+              <li><a href="#">MyJolt</a></li>
+              <li><a href="#">Forums</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+   </div>
+
+  <div class="wrapper">   
+    <div class="hpFeatured">
+         <ul class="ui-tabs-nav">
+	        <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-1"><div class="dotted"><a href="#fragment-1"></a></div><img src="img/thumb.png" alt="" /></li>
+	        <li class="ui-tabs-nav-item" id="nav-fragment-2"><div class="dotted"><a href="#"></a></div><img src="img/thumb2.png" alt="" /></li>
+	        <li class="ui-tabs-nav-item" id="nav-fragment-3"><div class="dotted"><a href="#"></a></div><img src="img/thumb3.png" alt="" /></li>
+	        <li class="ui-tabs-nav-item" id="nav-fragment-4"><div class="dotted"><a href="#"></a></div><img src="img/thumb4.png" alt="" /></li>
+            <li class="ui-tabs-nav-item" id="nav-fragment-5"><div class="dotted"><a href="#"></a></div><img src="img/thumb5.jpg" alt="" /></li>
+	      </ul>
+      
+        <div id="fragment-1" class="ui-tabs-panel" style="">
+            <img class="image" src="img/featured01.png" width="1002" height="392" />
+            <div class="info">
+                <h2><a href="#">Borderlands 2 Demo Released</a></h2>
+                <p>And we got it baby! Play the best demo since dora the explorer.<br />
+                <a href="#" class="more"><em>Read More</em></a></p>
+            </div>
+        </div>
+
+        <!-- <div id="fragment-2" class="ui-tabs-panel ui-tabs-hide" style="">
+            <img class="image" src="img/featured02.png" width="1002" height="392" />
+            <div class="info">
+                <h2><a href="#">Left 4 Dead 2: Free DLC</a></h2>
+                <p>WTF? a new DLC that will feature, homosexual clowns?! <br />
+                <a href="#" class="more"><em>Read More</em></a></p>
+
+            </div>
+        </div>
+
+        <div id="fragment-3" class="ui-tabs-panel ui-tabs-hide" style="">
+            <img class="image" src="img/featured03.png" width="1002" height="392" />
+            <div class="info">
+                <h2><a href="#">Civ IV Patch Released</a></h2>
+                <p>A new patch was released for Civ IV. Get it while its hot!<br />
+
+                <a href="#" class="more"><em>Read More</em></a></p>
+            </div>
+        </div>
+
+        <div id="fragment-4" class="ui-tabs-panel ui-tabs-hide" style="">
+            <img class="image" src="img/featured04.png" width="1002" height="392" />
+            <div class="info">
+                <h2><a href="#">My Name Is V</a></h2>
+
+                <p>That's right! there is a game coming out and we got the details! <br />
+                <a href="#" class="more"><em>Read More</em></a></p>
+            </div>
+        </div>
+
+        <div id="fragment-5" class="ui-tabs-panel ui-tabs-hide" style="">
+            <img class="image" src="img/featured05.png" width="1002" height="392" />
+            <div class="info">
+                <h2><a href="#">World of Warcraft Cataclysm Beta Available</a></h2>
+                <p>Beta is now available for a completely free download 5 <br />
+                <a href="#" class="more"><em>Read More</em></a></p>
+            </div>
+        </div>		 -->
+    </div>
+
+   <div class="mainSkybox">
+       <div class="container">
+           <div class="dashboard">
+               <h1 class="login"><a href="#">Login</a></h1>
+               <h1 class="register"><a href="#">Register</a></h1>
+               <div class="adspot" id="banner_container_728x90top"></div>
+           </div>  
+           <div class="advert" id="banner_container_300x250sky"></div>
+       </div>   
+   </div>
+
+  <div class="mainContent">
+      <div class="left">
+      	
+        <div class="quickUpload">
+        	<h1>Quick Upload</h1>
+            <p>Distribute your game related files through us for free! Just select the files that you wish to share and upload on your computer and once uploaded, they will become immediately available for you and your friends to download.</p>
+            
+          <form action='upload2.php' id='jolt_form' name='jolt_form' method='post' enctype='multipart/form-data'>
+            <input type='hidden' name='file' value='0' />
+            <input type='hidden' name='file_key' value='6b3700824afea5a15619e7f1f05dc528' />
+            <input type='hidden' name='file_folder' value='0' />
+            <input type='text' class='input_normal' value="C:\Users\FileJOLT\Documents\Base.SC2Assets"/>
+            <input type='file' name='jolt_data' id='jolt_upload' class='input_file' style="visibility:hidden;" />
+
+            <div class="upload"><a href="javascript:jQuery('#jolt_upload').uploadifyUpload();">Upload Files</a></div>   
+            <div class="clear"></div>                     
+          </form>    
+        </div>
+        
+        <div class="downloadTable">   
+            <ul class="tab">
+                <li class="one">Popular Downloads</li>
+                <li class="two"><a href="#">Latest Downloads</a></li>
+                <li class="three"><a href="#">Staff Picks</a></li>
+            </ul>         
+
+            <ul class="table">
+                <li><strong class="numbers">1.</strong> <strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong> <a href="#">Arcania: Gothic IV Demo</a><span><strong class="alt">Downloads:</strong> 945,535</span> <strong class="download"><a href="#">Download</a></strong></li>
+                <li><strong class="numbers">2.</strong> <strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong> <a href="#">Command & Conquer: Tiberian Sun (Full Ga...</a><span><strong class="alt">Downloads:</strong> 945,535</span> <strong class="download"><a href="#">Download</a></strong></li>
+                <li><strong class="numbers">3.</strong> <strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong> <a href="#">Sid Meier's Civilization V Demo</a><span><strong class="alt">Downloads:</strong> 945,535</span> <strong class="download"><a href="#">Download</a></strong></li>
+                <li><strong class="numbers">4.</strong> <strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong> <a href="#">Lineage 2 - Freya Game Client</a><span><strong class="alt">Downloads:</strong> 945,535</span> <strong class="download"><a href="#">Download</a></strong></li>
+                <li><strong class="numbers">5.</strong> <strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong> <a href="#">Ship Simulator Extremes Demo</a><span><strong class="alt">Downloads:</strong> 945,535</span> <strong class="download"><a href="#">Download</a></strong></li>
+                <li><strong class="numbers">6.</strong> <strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong> <a href="#">Final Fantasy XIV Benchmark</a><span><strong class="alt">Downloads:</strong> 945,535</span> <strong class="download"><a href="#">Download</a></strong></li>
+                <li><strong class="numbers">7.</strong> <strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong> <a href="#">MapleStory Client (Free MMO)</a><span><strong class="alt">Downloads:</strong> 945,535</span> <strong class="download"><a href="#">Download</a></strong></li>
+                <li><strong class="numbers">8.</strong> <strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong> <a href="#">Unreal Tournament 3 - Patch 5</a><span><strong class="alt">Downloads:</strong> 945,535</span> <strong class="download"><a href="#">Download</a></strong></li>
+                <li><strong class="numbers">9.</strong> <strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong> <a href="#">Aion Online Client v2.0.0.2</a><span><strong class="alt">Downloads:</strong> 945,535</span> <strong class="download"><a href="#">Download</a></strong></li>
+                <li><strong class="numbers">10.</strong> <strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong> <a href="#">Bioshock: Infinite 'Gameplay Demo' Trailer</a><span><strong class="alt">Downloads:</strong> 945,535</span> <strong class="download"><a href="#">Download</a></strong></li>
+            </ul>
+        </div>  
+        
+        <div class="list list-news">
+            <h1>Latest News</h1>    
+                <ul>
+                    <li>
+                        <div class="thumb"><div class="sprite"><a href="#"></a></div><img src="img/news.jpg" alt="" /></div>
+                        <div class="blurb">
+                        <h2>North Korea Invades America In Kaos Studios' Homefront</h2>
+                        <p>THQ Inc. today announced Homefront, a new First Person Shooter (FPS) from internal developer Kaos Studios. Penned by John Milius (Apocalypse Now, Red Dawn), Homefront is set ten years after the economic collapse of the...
+                        </p>
+                        <div class="details">
+                        Posted by <a href="#">Josh Hubi</a> on <span>Thursday, Sept 30, 2010</span> at <span>12:00 PM EST</span>  //  <a href="#">0 Comments</a>
+                        </div>
+                        </div>
+                    </li> 
+                    
+                    <li>
+                        <div class="thumb"><div class="sprite"><a href="#"></a></div><img src="img/news.jpg" alt="" /></div>
+                        <div class="blurb">
+                        <h2>North Korea Invades America In Kaos Studios' Homefront</h2>
+                        <p>THQ Inc. today announced Homefront, a new First Person Shooter (FPS) from internal developer Kaos Studios. Penned by John Milius (Apocalypse Now, Red Dawn), Homefront is set ten years after the economic collapse of the...
+                        </p>
+                        <div class="details">
+                        Posted by <a href="#">Josh Hubi</a> on <span>Thursday, Sept 30, 2010</span> at <span>12:00 PM EST</span>  //  <a href="#">0 Comments</a>
+                        </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="thumb"><div class="sprite"><a href="#"></a></div><img src="img/news.jpg" alt="" /></div>
+                        <div class="blurb">
+                        <h2>North Korea Invades America In Kaos Studios' Homefront</h2>
+                        <p>THQ Inc. today announced Homefront, a new First Person Shooter (FPS) from internal developer Kaos Studios. Penned by John Milius (Apocalypse Now, Red Dawn), Homefront is set ten years after the economic collapse of the...
+                        </p>
+                        <div class="details">
+                        Posted by <a href="#">Josh Hubi</a> on <span>Thursday, Sept 30, 2010</span> at <span>12:00 PM EST</span>  //  <a href="#">0 Comments</a>
+                        </div>
+                        </div>
+                    </li>
+                    
+                    <li class="ad">
+                    	<a href="#"><img src="img/redbull2.jpg" width="679" height="300" /></a>
+                    </li>
+                    
+                    <li>
+                        <div class="thumb"><div class="sprite"><a href="#"></a></div><img src="img/news.jpg" alt="" /></div>
+                        <div class="blurb">
+                        <h2>North Korea Invades America In Kaos Studios' Homefront</h2>
+                        <p>THQ Inc. today announced Homefront, a new First Person Shooter (FPS) from internal developer Kaos Studios. Penned by John Milius (Apocalypse Now, Red Dawn), Homefront is set ten years after the economic collapse of the...
+                        </p>
+                        <div class="details">
+                        Posted by <a href="#">Josh Hubi</a> on <span>Thursday, Sept 30, 2010</span> at <span>12:00 PM EST</span>  //  <a href="#">0 Comments</a>
+                        </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="thumb"><div class="sprite"><a href="#"></a></div><img src="img/news.jpg" alt="" /></div>
+                        <div class="blurb">
+                        <h2>North Korea Invades America In Kaos Studios' Homefront</h2>
+                        <p>THQ Inc. today announced Homefront, a new First Person Shooter (FPS) from internal developer Kaos Studios. Penned by John Milius (Apocalypse Now, Red Dawn), Homefront is set ten years after the economic collapse of the...
+                        </p>
+                        <div class="details">
+                        Posted by <a href="#">Josh Hubi</a> on <span>Thursday, Sept 30, 2010</span> at <span>12:00 PM EST</span>  //  <a href="#">0 Comments</a>
+                        </div>
+                        </div>
+                    </li>
+                    
+                    <li class="more">Want more news? We got it! For more, just <a href="#">Click Here »</a></li>  
+                </ul>
+        </div>
+        
+        <div class="list list-features">
+        	<ul class="tab">
+                <li class="one">Recent Reviews</li>
+                <li class="two"><a href="#">Recent Previews</a></li>
+            </ul>
+            
+            <ul>
+                <li>
+                    <div class="thumb"><div class="sprite"><a href="#"></a></div><img src="img/reviewThumb.png" alt="" /></div>
+                    <div class="blurb">
+                    <h2>Dead Rising 2 Review</h2>
+                    <p>When there is no room left in hell, the dead will shop in Fortune City. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue massa a odio aliquet sed ornare orci sagittis. Suspendisse suscipit egestas mi. Aliquam eleifend orci ac purus molestie non iaculis libero volutpat...
+                    </p>
+                    <div class="details">
+                    Posted by <a href="#">Josh Hubi</a> on <span>Thursday, Sept 30, 2010</span> at <span>12:00 PM EST</span>  //  <a href="#">0 Comments</a>
+                    </div>
+                    </div>
+                                
+                    <div class="score score-100">
+                    <div>Incredible</div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="thumb"><div class="sprite"><a href="#"></a></div><img src="img/reviewThumb.png" alt="" /></div>
+                    <div class="blurb">
+                    <h2>Dead Rising 2 Review</h2>
+                    <p>When there is no room left in hell, the dead will shop in Fortune City. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue massa a odio aliquet sed ornare orci sagittis. Suspendisse suscipit egestas mi. Aliquam eleifend orci ac purus molestie non iaculis libero volutpat...
+                    </p>
+                    <div class="details">
+                    Posted by <a href="#">Josh Hubi</a> on <span>Thursday, Sept 30, 2010</span> at <span>12:00 PM EST</span>  //  <a href="#">0 Comments</a>
+                    </div>
+                    </div>
+                                
+                    <div class="score score-100">
+                    <div>Incredible</div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="thumb"><div class="sprite"><a href="#"></a></div><img src="img/reviewThumb.png" alt="" /></div>
+                    <div class="blurb">
+                    <h2>Dead Rising 2 Review</h2>
+                    <p>When there is no room left in hell, the dead will shop in Fortune City. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue massa a odio aliquet sed ornare orci sagittis. Suspendisse suscipit egestas mi. Aliquam eleifend orci ac purus molestie non iaculis libero volutpat...
+                    </p>
+                    <div class="details">
+                    Posted by <a href="#">Josh Hubi</a> on <span>Thursday, Sept 30, 2010</span> at <span>12:00 PM EST</span>  //  <a href="#">0 Comments</a>
+                    </div>
+                    </div>
+                                
+                    <div class="score score-100">
+                    <div>Incredible</div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="thumb"><div class="sprite"><a href="#"></a></div><img src="img/reviewThumb.png" alt="" /></div>
+                    <div class="blurb">
+                    <h2>Dead Rising 2 Review</h2>
+                    <p>When there is no room left in hell, the dead will shop in Fortune City. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue massa a odio aliquet sed ornare orci sagittis. Suspendisse suscipit egestas mi. Aliquam eleifend orci ac purus molestie non iaculis libero volutpat...
+                    </p>
+                    <div class="details">
+                    Posted by <a href="#">Josh Hubi</a> on <span>Thursday, Sept 30, 2010</span> at <span>12:00 PM EST</span>  //  <a href="#">0 Comments</a>
+                    </div>
+                    </div>
+                                
+                    <div class="score score-100">
+                    <div>Incredible</div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="thumb"><div class="sprite"><a href="#"></a></div><img src="img/reviewThumb.png" alt="" /></div>
+                    <div class="blurb">
+                    <h2>Dead Rising 2 Review</h2>
+                    <p>When there is no room left in hell, the dead will shop in Fortune City. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue massa a odio aliquet sed ornare orci sagittis. Suspendisse suscipit egestas mi. Aliquam eleifend orci ac purus molestie non iaculis libero volutpat...
+                    </p>
+                    <div class="details">
+                    Posted by <a href="#">Josh Hubi</a> on <span>Thursday, Sept 30, 2010</span> at <span>12:00 PM EST</span>  //  <a href="#">0 Comments</a>
+                    </div>
+                    </div>
+                                
+                    <div class="score score-100">
+                    <div>Incredible</div>
+                    </div>
+                </li>
+                
+                <li class="more">Want more reviews? We got them! For more, just <a href="#">Click Here »</a></li>  
+            </ul> 
+        </div>
+            
+      </div>
+  
+      <div class="right">
+          <section id="what-is-filejolt">
+                    <h1>What Is FileJolt?</h1>
+                    <p>FileJolt is a video game download service that provides free lighting speed game patches, demos, mod files, and media downloads right to its users. <a href="#">Sign-up now</a>, get your account, a custom page, your own personal blog and all of the other benefits that users receive after getting an account with FileJolt. <a href="#">Learn More...</a></p>
+           </section>
+           
+           <div class="whos-downloading">
+           		<h1>Who's Now Downloading</h1>
+                
+                <ul class="table">
+                    <li><strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong> <strong class="txt"><a href="#">JoshHubi</a> <p><span class="gray">Downloading:</span> Unreal Tourn- ament 3 - Patch</p></strong> <strong class="download"><a href="#">Download</a></strong></li>
+                    <li><strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong> <strong class="txt"><a href="#">Davidhc</a> <p><span class="gray">Downloading:</span> Unreal Tourn- ament 3 - Patch</p></strong> <strong class="download"><a href="#">Download</a></strong></li>
+                    <li><strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong> <strong class="txt"><a href="#">JesseW</a> <p><span class="gray">Downloading:</span> Unreal Tourn- ament 3 - Patch</p></strong> <strong class="download"><a href="#">Download</a></strong></li>
+                    <li><strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong> <strong class="txt"><a href="#">rm2490</a> <p><span class="gray">Downloading:</span> Unreal Tourn- ament 3 - Patch</p></strong> <strong class="download"><a href="#">Download</a></strong></li>
+                    <li><strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong> <strong class="txt"><a href="#">DaftPunk</a> <p><span class="gray">Downloading:</span> Unreal Tourn- ament 3 - Patch</p></strong> <strong class="download"><a href="#">Download</a></strong></li>
+            	</ul> 
+           </div>
+           
+           <div class="latest-forum-posts">
+           		<h1>Latest Forum Posts</h1>
+                
+                <ul class="table">
+                    <li><strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong><a href="#">JoshHubi</a> <strong class="topic"><a href="#">Lorem ipsum dolor sit amet</a></strong></li>
+                    <li><strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong><a href="#">Sabrina84</a> <strong class="topic"><a href="#">Quisque adipiscing conse...</a></strong></li>
+                    <li><strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong><a href="#">ninjamoh...</a> <strong class="topic"><a href="#">Nullam dapibus, quam ne...</a></strong></li>
+                    <li><strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong><a href="#">Brianzion</a> <strong class="topic"><a href="#">Nullam et suscipit eros cr...</a></strong></li>
+                    <li><strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong><a href="#">zooblah</a> <strong class="topic"><a href="#">Morbi sit amet tellus ut</a></strong></li>
+                    <li><strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong><a href="#">Thor33456</a> <strong class="topic"><a href="#">Vivamus luctus velit at adi...</a></strong></li>
+                    <li><strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong><a href="#">henuzuro</a> <strong class="topic"><a href="#">Quisque cursus enim ac la...</a></strong></li>
+                    <li><strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong><a href="#">superflas..</a> <strong class="topic"><a href="#">Nullam consequat tristique...</a></strong></li>
+                    <li><strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong><a href="#">Azurelimit</a> <strong class="topic"><a href="#">Pellentesque sed auctor ri...</a></strong></li>
+					<li><strong class="img"><img src="img/iconSprite.png" width="22" height="22" /></strong><a href="#">phoenix12</a> <strong class="topic"><a href="#">Fusce ornare euismod est...</a></strong></li>
+            	</ul>
+           </div>
+           
+          <div class="advert" id="banner_container_300x250_btf"></div>
+          
+          <div class="weekly-poll">
+          	<h1>Weekly Poll</h1>
+            <p>Do you currently download music or purchase CDs?</p>
+            
+            <ul>
+            	<l1><p>Yes, and I pay for it. <span>(34%)</span></p><div class="bar" style="width:34%"></div></li>
+                <l1><p>Yes, and I don't pay for it. <span>(11%)</span></p><div class="bar" style="width:11%"></div></li>
+                <l1><p>Yea, I sometimes download music and somethings buy CDs. <span>(18%)</span></p><div class="bar" style="width:18%"></div></li>
+                <l1><p>Sometimes by paying for it. <span>(12%)</span></p><div class="bar" style="width:12%"></div></li>
+                <l1><p>Sometimes by not paying for it. <span>(7%)</span></p><div class="bar" style="width:7%"></div></li>
+                <l1><p>Nope, I buy CDs. <span>(11%)</span></p><div class="bar" style="width:11%"></div></li>
+                <l1><p>Nope, I'm not interested in music. <span>(4%)</span></p><div class="bar" style="width:4%"></div></li>
+            </ul>
+          </div>
+          
+          <div class="rss">
+          	<h1>RSS Feeds</h1>
+            <p>Want to stay up-to-date with FileJolt? Well we provide RSS feeds that you can subscribe to and always know exactly what is going on in the computer industry... Just click on the large orange RSS icon to the right and become subscribed!</p>
+            <div class="button"><a href="#">RSS Feed</a></div>
+          </div>
+          
+          <div class="connect">
+              <h1>Use Facebook / Twitter</h1>
+              <p>Have a Facebook and/or Twitter account? Well you can use either account to login to FileJolt by clicking on the button of your choice below:</p>
+              <div class="facebook"><a href="#">Login With Facebook</a></div>
+              <div class="twitter"><a href="#">Login With Twitter</a></div>
+          </div>
+          
+          <div class="advert" id="banner_container_300x250_btf2"></div>  
+                  
+      </div>
+      <div class="clear"></div>    
+  </div>
+</div>
+
+<div class="footer">
+    <div class="wrapper">
+      <h1 class="logo"><a href="#">FileJolt</a></h1>
+      <h1 class="copyright">© 2010 <a href="http://www.pixelblast-media.com" target="_blank">PixelBlast Media</a>, LLC. <br />A Registered trademark.</h1>        
+     
+      <div class="adspot" id="banner_container_728x90bottom"></div>
+      
+      <div class="links">
+          <strong>Most Popular Downloads</strong>: <a href="#">Arcadia Gathic IV Demo</a> |  <a href="#">Command & Conquer: Tiberian Sun (Full Game)</a> |  <a href="#">Sid Meier's Civilization V Demo</a> |  
+            <a href="#">Lineage 2 - Freya Game Client</a> |  <a href="#">Ship Simulator Extremes Demo</a> |  <a href="#">Final Fantasy XIV Benchmark</a> |  <a href="#">MapleStory Client </a>|  
+          <a href="#">Unreal Tournament 3 - Patch 5</a> |  <a href="#">Aion Online Client c2.0.0.2</a> |  <a href="#">Bioshock: Infinite 'Gameplay Demo' Trailer</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+  <script type="text/javascript" src="js/libs/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/libs/upload/jquery.uploadify.v2.1.4.js"></script>
+  <script type="text/javascript" src="js/swfobject.js"></script>
+  
+  <!-- scripts concatenated and minified via ant build script-->
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <!-- end scripts-->
+  
+  <!-- script for loading up the homepage stunt -->
+  <script type="text/javascript">
+  match_re = /xhtml\/#stunt/; 
+  if ((location.href.match(match_re))) {
+	
+  document.write('<div style="position:absolute;z-index:999; top:50px; width:100%;"><div align="center"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="1090" height="845" id="grhulk2" align="middle">' +
+			'<param name="allowScriptAccess" value="sameDomain" />' +
+			'<param name="allowFullScreen" value="false" />' +
+			'<param name="clickTag" value="http://ad.doubleclick.net/clk;211212544;32748738;d?http://ad.doubleclick.net/click;h=v2|3A8B|0|0|%2a|l;211055713;0-0;0;32598643;31-1|1;29869501|29887378|1;;%3fhttp://www.maxpaynethemovie.com" />' +
+			'<param name="movie" value="crank2-stunt-inTheaters.swf?clickTag=http://ad.doubleclick.net/clk;211212544;32748738;d?http://ad.doubleclick.net/click;h=v2|3A8B|0|0|%2a|l;211055713;0-0;0;32598643;31-1|1;29869501|29887378|1;;%3fhttp://www.maxpaynethemovie.com" /><param name="quality" value="high" /><param name="wmode" value="transparent" /><param name="bgcolor" value="#000000" />' +
+				'<embed FlashVars="clickTag=http://ad.doubleclick.net/clk;211212544;32748738;d?http://ad.doubleclick.net/click;h=v2|3A8B|0|0|%2a|l;211055713;0-0;0;32598643;31-1|1;29869501|29887378|1;;%3fhttp://www.maxpaynethemovie.com" src="crank2-stunt-inTheaters.swf" quality="high" wmode="transparent" bgcolor="#000000" width="1090" height="845" name="grhulk2" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />' +
+   '</object></div></div>'); }
+   </script>
+
+  <!-- script for advertisment post-loading --> 
+  <div id="banner_data_728x90top">
+    <a href="#"><img src="img/redbull_728x90.jpg" /></a>
+  </div>
+
+  <script type="text/javascript">
+  adMove('728x90top');
+  </script>
+
+  <div id="banner_data_300x250sky">
+    <a href="#"><img src="img/redbull_300x250.jpg" /></a>
+  </div>
+
+  <script type="text/javascript">
+  adMove('300x250sky');
+  </script>
+  
+  <div id="banner_data_300x250_btf">
+    <a href="#"><img src="img/redbull_300x250.jpg" /></a>
+  </div>
+
+  <script type="text/javascript">
+  adMove('300x250_btf');
+  </script>
+  
+  <div id="banner_data_300x250_btf2">
+    <a href="#"><img src="img/redbull_300x250.jpg" /></a>
+  </div>
+
+  <script type="text/javascript">
+  adMove('300x250_btf2');
+  </script>
+
+  <div id="banner_data_728x90bottom">
+    <a href="#"><img src="img/redbull_728x90.jpg" /></a>
+  </div>
+
+  <script type="text/javascript">
+  adMove('728x90bottom');
+  </script>
+
+</body>
+</html>
